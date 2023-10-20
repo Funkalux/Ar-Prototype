@@ -22,6 +22,7 @@
   }
 </style>
 
+
 <body style="margin : 0px; overflow: hidden;">
   <div class="arjs-loader">
     <div>Cargando...</div>
@@ -32,10 +33,10 @@
            arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
     <a-assets>
-        <img src="./Images/Beagle.png"></img>
-        <img src="./Images/Bulldog.png"></img>
-        <img src="./Images/Collie.png"></img>
-        <img src="./Images/Husky.png"></img>
+        <img id="Beagle" src="./Images/Beagle.png"></img>
+        <img id="Bulldog" src="./Images/Bulldog.png"></img>
+        <img id="Collie" src="./Images/Collie.png"></img>
+        <img id="Husky" src="./Images/Husky.png"></img>
     </a-assets>
 
     <a-nft type="nft"
@@ -44,7 +45,7 @@
            smoothCount="10"
            smoothTolerance=".01"
            smoothThreshold="5">
-      <a-image src="./Images/Beagle.png"
+      <a-image src="#Beagle"
                scale="5 5 5"
                position="150 300 -100">
       </a-entity>
@@ -55,7 +56,7 @@
            smoothCount="10"
            smoothTolerance=".01"
            smoothThreshold="5">
-      <a-image src="./Images/Bulldog.png"
+      <a-image src="#Bulldog"
                scale="5 5 5"
                position="150 300 -100">
       </a-entity>
@@ -66,7 +67,7 @@
            smoothCount="10"
            smoothTolerance=".01"
            smoothThreshold="5">
-      <a-image src="./Images/Collie.png"
+      <a-image src="#Collie"
                scale="5 5 5"
                position="150 300 -100">
       </a-entity>
@@ -77,7 +78,7 @@
            smoothCount="10"
            smoothTolerance=".01"
            smoothThreshold="5">
-      <a-image src="./Images/Husky.png"
+      <a-image src="#Husky"
                scale="5 5 5"
                position="150 300 -100">
       </a-entity>
